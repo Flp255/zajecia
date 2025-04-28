@@ -1,0 +1,5 @@
+imię:Filip
+nazwisko:Tomys
+numer albumu:255414
+e-mail: 255414@edu.p.lodz.pl
+tryb studiów: 2AiSR2
