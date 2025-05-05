@@ -25,7 +25,7 @@ void liczenie_tekstu(const char *const ciag, int *dlugosc){
     const char *ptr =ciag;
     *dlugosc =0;
     while(*ptr != '\0'){
-        (*dlugosc)++;
+        (*dlugosc++);
         ptr++;
     }
 }
@@ -34,11 +34,11 @@ void liczenie_tekstu(const char *const ciag, int *dlugosc){
 int main() {
 
     char tekst[] = "luBIE plACki";
-   /printf("tekst: %s\n", tekst);
+   /* printf("tekst: %s\n", tekst);
     male_litery(tekst);
     printf("zmodyfikowany tekst: %s\n", tekst);
     wielkie_litery(tekst);
-    printf("zmodyfikowany tekst: %s\n", tekst);
+    printf("zmodyfikowany tekst: %s\n", tekst); */
     int wielkosc =0;
     printf("tekst: %s\n", tekst);
     liczenie_tekstu(tekst, &wielkosc);
