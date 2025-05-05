@@ -17,6 +17,9 @@ int main(int argc, char const* argv[]) {
     const char* operation = argv[2];
     double b = atof(argv[3]);
     double result;
-
+ if (strcmp(operation, "add") == 0) {
+     result = a + b;
+     printf("Result: %f + %f =%f\n", a, b, result);
+ }
         return 0;
     }
