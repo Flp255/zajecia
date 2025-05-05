@@ -1,27 +1,22 @@
-
 #include <stdio.h>
 #include <stdlib.h>
-#include <cstring>
+#include <string.h>  
 
-void usage(const char *program_name) {
-    printf("Sposob uzycia: %s <number> <operation> <number>\n", program_name);exit(1);
+void usage(const char* program_name) {
+    printf("How to use: %s <number1> <operation> <number2>\n", program_name);
+    printf("Choose the operation:\n  add  sub  mul  div\n");
+    exit(1);
 }
-    int main(int argc, char const *argv[]) {
-        int a,b,results;
-        char operation[15];
-      //  if (argc < 3)
-    printf("Choose the operation:\n add sub\n");
 
-        scanf("%c",operation);
+int main(int argc, char const* argv[]) {
+    if (argc != 4) {
+        usage(argv[0]);
+    }
 
-       // usage(argv[0]);
-        scanf("%d, %d",a,b);
-       // printf("Numbers and operation: %c, %d, %d");
-        if(strcmp(operation,"add")==0){
-            results = a+b;
-        }
-
-
+    double a = atof(argv[1]);
+    const char* operation = argv[2];
+    double b = atof(argv[3]);
+    double result;
 
         return 0;
     }
